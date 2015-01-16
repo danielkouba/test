@@ -15,3 +15,15 @@ pbcopy < ~/.ssh/id_rsa.pub
 eval "$(ssh-agent -s)"
 # Agent pid 59566
 ssh-add ~/.ssh/id_rsa
+
+$ ssh -l tommy
+will log you in as tommy.
+
+You can also make this persistent per-host by having a record like this in
+ ~/.ssh/config:
+
+Host creative_pc
+User tommy
+HostName creative_pc.net #or ip address
+
+$ ssh creative_pc # this is the string from Host setting
