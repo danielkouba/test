@@ -1,0 +1,34 @@
+Git Notes
+
+git add . - adds all files to staging
+git commit -m "MESSAGE" - commit files and add commit message
+git checkout -b "BRANCH" - create a branch 
+git checkout master - go to master
+git status - shows any changes in files
+git diff - shows differences made in files
+git merge "BRANCH" - merges branch to master
+git log - shows commits and messages '--oneline' modifier is nice
+git branch -d "BRANCH" - deletes Branch
+git reset HEAD <path/to/file> - unstage a file 
+git checkout HEAD^ <path/to/file> - undo previous committed file
+git reset --hard HEAD^ - undo entire commit
+git blame
+git stash
+git branch - shows what branches exist
+
+remote
+git remote -v - returns remote repositories
+git clone {URL} - creates a local clone of a remote repo
+git add {nickname} {remote repo url} - create a nickname for a remote repo
+git fetch origin - get all files that are not currently local from repo
+git pull origin - append changes from repo to local
+git push origin - puts local changes to repo
+git remote show - shows remote repos/nicknames and URLs
+
+initializing
+git config user.name “username” - write username
+git config user.name - put username
+git config —global user.name “username”
+git config —global user.name
+git config —global user.email “email@email.com”
+git config —global user.email
