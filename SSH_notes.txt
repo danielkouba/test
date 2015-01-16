@@ -6,6 +6,7 @@ ls -al ~/.ssh  -  shows what keys you do have
 ssh-keygen -C "username@domain"
 
 chmod 700
+	600
 
 pbcopy < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
